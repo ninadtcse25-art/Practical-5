@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Healthy Living</title>
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+<style>
+body{
+  margin:0;
+  font-family:'Nunito', sans-serif;
+  background:#f7fff7;
+}
+.header{
+  background:#38a3a5;
+  color:white;
+  text-align:center;
+  padding:18px;
+}
+.intro{
+  column-count:2;
+  column-gap:25px;
+  padding:20px;
+  font-size:15px;
+}
+.box-area{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+.box{
+  background:white;
+  width:230px;
+  margin:15px;
+  padding:15px;
+  border-radius:12px;
+  text-align:center;
+  box-shadow:0 3px 6px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+.box:hover{
+  transform: scale(1.08) rotate(1deg);
+}
+.icon{
+  font-size:28px;
+}
+@keyframes glow{
+  from{background:#d8f3dc;}
+  to{background:#b7e4c7;}
+}
+
+.tip{
+  margin:20px;
+  padding:12px;
+  text-align:center;
+  animation: glow 2s infinite alternate;
+}
+@media screen and (max-width:768px){
+  .intro{
+    column-count:1;
+  }
+  .box-area{
+    flex-direction:column;
+    align-items:center;
+  }
+}
+
+</style>
+</head>
+<body>
+<div class="header">
+  <h2>Healthy Lifestyle</h2>
+  <p>Simple habits for better living</p>
+</div>
+<div class="intro">
+  <p>Maintaining a healthy lifestyle is important for both body and mind. Small daily habits can make a big difference.</p>
+  <p>This page shows basic web design using CSS3 features like columns, animations, and responsive layout.</p>
+</div>
+<div class="box-area">
+  <div class="box">
+    <div class="icon"></div>
+    <h3>Healthy Food</h3>
+    <p>Eating fresh fruits and vegetables keeps the body active and strong.</p>
+  </div>
+  <div class="box">
+    <div class="icon"></div>
+    <h3>Exercise</h3>
+    <p>Regular physical activity improves fitness and reduces stress.</p>
+  </div>
+  <div class="box">
+    <div class="icon"></div>
+    <h3>Sleep</h3>
+    <p>Proper sleep helps in recovery and keeps the mind fresh.</p>
+  </div>
+</div>
+<div class="tip">
+  Stay consistent with your routine for better results!
+</div>
+</body>
+</html>
